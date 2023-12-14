@@ -34,15 +34,15 @@ function random(){
     let num = Math.round(Math.random()*3)
     if(num==1 && playerSelection!=1){
         compSelection=1;
-        compImg.src = `/rock-paper-scissors/assets/rock-hand.png`;
+        compImg.src = `rock-hand.png`;
     }
     else if(num==2 && playerSelection!=2){
         compSelection=2;
-        compImg.src = `/rock-paper-scissors/assets/paper-hand.png`;
+        compImg.src = `paper-hand.png`;
     }
     else if(num==3 && playerSelection!=3){
         compSelection=3;
-        compImg.src = `/rock-paper-scissors/assets/scissors-hand.png`;
+        compImg.src = `scissors-hand.png`;
     }
     else{
         random();
@@ -112,21 +112,21 @@ function result(){
 
 
 rock.onclick = () => {
-    playerImg.src = `/rock-paper-scissors/assets/rock-hand.png`
+    playerImg.src = `rock-hand.png`
     imgVisible()
     playerSelection = 1
     random()
 }
 
 paper.onclick = () => {
-    playerImg.src = `/rock-paper-scissors/assets/paper-hand.png`
+    playerImg.src = `paper-hand.png`
     imgVisible()
     playerSelection = 2
     random()
 }
 
 scissor.onclick = () => {
-    playerImg.src = `/rock-paper-scissors/assets/scissors-hand.png`
+    playerImg.src = `scissors-hand.png`
     imgVisible()
     playerSelection = 3
     random()
